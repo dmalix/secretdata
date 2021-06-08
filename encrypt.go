@@ -6,6 +6,7 @@ import (
 	"crypto/rand"
 	"fmt"
 	"io"
+	"log"
 )
 
 func (c Cipher) Encrypt(data []byte) ([]byte, error) {
@@ -36,6 +37,8 @@ func (c Cipher) Encrypt(data []byte) ([]byte, error) {
 	}
 
 	result = cipherGCM.Seal(nonceUse, nonceUse, data, nil)
+
+	log.Println("SECRETDATA1", c.SecretKey, result)
 
 	return result, nil
 }

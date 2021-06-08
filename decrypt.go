@@ -4,9 +4,12 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"fmt"
+	"log"
 )
 
 func (c Cipher) Decrypt(data []byte) ([]byte, error) {
+
+	log.Println("SECRETDATA2", c.SecretKey, data)
 
 	var (
 		err    error
