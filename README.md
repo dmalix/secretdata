@@ -1,6 +1,6 @@
 # Secret Data
 
-Easy data encoding and decoding.
+Easy the encrypting and decrypting a dataset.
 
 ### Supported Go versions
 
@@ -29,7 +29,7 @@ go get -u github.com/dmalix/secretdata
 
 ## Algorithm
 
-When encoding and decoding a dataset, the secret key is forced hashed to generate a 32-byte key for use with AES-256.
+When encrypting and decrypting a dataset, the secret key is forced hashed to generate a 32-byte key for use with AES-256.
 The **Secret Data** library uses AEAD, an encryption mode that provides authenticated encryption of associated data. 
 For a description of the methodology, see [https://en.wikipedia.org/wiki/Authenticated_encryption](https://en.wikipedia.org/wiki/Authenticated_encryption)
 
