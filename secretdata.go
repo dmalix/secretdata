@@ -1,12 +1,6 @@
 package secretdata
 
-type Cipher struct {
-	SecretKey string
-}
-
-func NewSecretData(
-	SecretKey string) *Cipher {
-	return &Cipher{
-		SecretKey: SecretKey,
-	}
+type SecretData interface {
+	Encrypt(data []byte) ([]byte, error)
+	Decrypt(data []byte) ([]byte, error)
 }
