@@ -20,7 +20,7 @@ func Test_SUCCESS(t *testing.T) {
 		t.Errorf("failed to decrypt the dataset: %s", err)
 	}
 
-	if string(decryptedData) != string(dataset)  {
+	if string(decryptedData) != string(dataset) {
 		t.Errorf("function returned wrong status code: got '%v' want '%v'", string(decryptedData), string(dataset))
 	}
 }
