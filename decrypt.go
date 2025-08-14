@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-func (c Cipher) Decrypt(data []byte) ([]byte, error) {
+func (c Secretdata) Decrypt(data []byte) ([]byte, error) {
 
 	var (
 		err    error

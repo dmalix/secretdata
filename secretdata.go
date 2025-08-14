@@ -1,12 +1,12 @@
 package secretdata
 
-type Cipher struct {
+type Secretdata struct {
 	SecretKey string
 }
 
 func NewSecretData(
-	SecretKey string) *Cipher {
-	return &Cipher{
+	SecretKey string) *Secretdata {
+	return &Secretdata{
 		SecretKey: SecretKey,
 	}
 }

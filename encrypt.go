@@ -8,7 +8,7 @@ import (
 	"io"
 )
 
-func (c Cipher) Encrypt(data []byte) ([]byte, error) {
+func (c Secretdata) Encrypt(data []byte) ([]byte, error) {
 
 	var (
 		err    error
